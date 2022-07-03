@@ -5,6 +5,8 @@ public class StatusContainer : Monobehavior
 {
 	private List<Status> statuses = new List<Status>();
 
+    public IReadonlyCollection<Status> Statuses => statuses.AsReadOnly();
+
     public void AddStatus<T>(int durationTicks) where T : Status
     {
         var statusData = new BasicStatusData(durationTicks);
