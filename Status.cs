@@ -1,4 +1,5 @@
-﻿using System;
+using UnityEngine;
+using System;
 
 public abstract class Status : MonoBehaviour
 {
