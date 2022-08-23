@@ -2,10 +2,11 @@
 
 public abstract class Status : MonoBehaviour
 {
+	protected Damageable damageable;
+	protected Vector3 direction;
 	protected int ticksSinceStart;
 	protected int durationTicks;
 	protected float value;
-	protected Vector3 direction;
 
 	protected StatusContainer container;
 
